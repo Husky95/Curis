@@ -1,0 +1,10 @@
+{
+ "name": "Transition",
+ "id": "70a674d0-b27c-4394-b7e4-b9143820c87f",
+ "scenario_trigger": "Transition_scenario",
+ "description": "",
+ "active": true,
+ "updated": "2022-11-30T19:53:50.685Z",
+ "userDisplayName": "ODL_User 777976",
+ "code": "{\"version\":3,\"steps\":[{\"type\":\"yesnoprompt\",\"dataType\":\"boolean\",\"variable\":\"answer\",\"text\":\"That the end of the current task. Would you like to continue with other services.\",\"markdown\":true,\"id\":\"a99534bb-3e27-4054-ad00-126fcebecfcb\",\"designer\":{\"xLocation\":9,\"yLocation\":0},\"stringId\":\"stringId_b8ff469080f28ffc\",\"targetStepId\":\"b5b5ad11-37d3-49a6-9166-6e8a8fef9154\"},{\"type\":\"prompt\",\"variable\":\"services\",\"dataType\":\"[\\\"Health Insurance Matching\\\", \\\"Health Physician Look-up\\\"]\",\"markdown\":true,\"id\":\"b5b5ad11-37d3-49a6-9166-6e8a8fef9154\",\"designer\":{\"xLocation\":88,\"yLocation\":65,\"next\":\"1b39fd1c-c138-4abe-b75d-adc6a7c536fb\",\"listStyle\":3},\"text\":\"Here are the services I'm able to provide\",\"stringId\":\"\",\"choiceType\":\"choice\"},{\"type\":\"switch\",\"id\":\"1b39fd1c-c138-4abe-b75d-adc6a7c536fb\",\"designer\":{\"xLocation\":88,\"yLocation\":130,\"next\":\"797d3d75-e56b-4ca6-acca-e8e34023d3da\"},\"condition\":\"${services}\",\"cases\":[{\"value\":\"\\\"Health Insurance Matching\\\"\",\"targetStepId\":\"797d3d75-e56b-4ca6-acca-e8e34023d3da\"},{\"value\":\"\\\"Health Physician Look-up\\\"\",\"targetStepId\":\"77b5e6fb-5fe8-40df-bfa6-78224e41cdff\"}]},{\"type\":\"replaceScenario\",\"id\":\"797d3d75-e56b-4ca6-acca-e8e34023d3da\",\"designer\":{\"xLocation\":0,\"yLocation\":221},\"scenario\":\"Health_insurance_scenario\"},{\"type\":\"replaceScenario\",\"id\":\"77b5e6fb-5fe8-40df-bfa6-78224e41cdff\",\"designer\":{\"xLocation\":151,\"yLocation\":229},\"scenario\":\"Provider_lookup_scenario\"}],\"breaking\":false,\"interrupting\":false,\"returningMessage\":\"\"}"
+}

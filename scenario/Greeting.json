@@ -1,0 +1,10 @@
+{
+ "name": "Greeting",
+ "id": "d1fb72bf-7689-4b21-a4cd-98f7118707a5",
+ "scenario_trigger": "Greeting_scenario",
+ "description": "simple greeting scenario",
+ "active": true,
+ "updated": "2022-12-01T11:09:19.641Z",
+ "userDisplayName": "ODL_User 777976",
+ "code": "{\"version\":3,\"steps\":[{\"type\":\"prompt\",\"variable\":\"services\",\"dataType\":\"[\\\"Health Insurance Matching\\\", \\\"Health Physician Look-up\\\"]\",\"markdown\":true,\"id\":\"2857fc51-ebc5-460c-9492-595f64a41f7d\",\"designer\":{\"xLocation\":21,\"yLocation\":0,\"next\":\"50af3f81-90d9-493a-8a55-6412c5e1fb10\",\"listStyle\":3},\"text\":\"Hi, my name is Curis and I'm here help bring affordable healthcare services to you.\\r\\nMy specialty is health insurance matching but I can provide other health services for you. Select below to proceed\",\"stringId\":\"\",\"choiceType\":\"choice\"},{\"type\":\"switch\",\"id\":\"50af3f81-90d9-493a-8a55-6412c5e1fb10\",\"designer\":{\"xLocation\":24,\"yLocation\":38,\"next\":\"b1cf81ac-ed8f-455f-9a82-1b20963750c5\"},\"condition\":\"${services}\",\"cases\":[{\"value\":\"\\\"Health Insurance Matching\\\"\",\"targetStepId\":\"b1cf81ac-ed8f-455f-9a82-1b20963750c5\"},{\"value\":\"\\\"Health Physician Look-up\\\"\",\"targetStepId\":\"fd09bcd7-d065-4306-8b02-9562af228628\"}]},{\"type\":\"beginScenario\",\"id\":\"b1cf81ac-ed8f-455f-9a82-1b20963750c5\",\"designer\":{\"xLocation\":-16,\"yLocation\":143},\"scenario\":\"Health_insurance_scenario\"},{\"type\":\"beginScenario\",\"id\":\"fd09bcd7-d065-4306-8b02-9562af228628\",\"designer\":{\"xLocation\":130,\"yLocation\":149},\"scenario\":\"Provider_lookup_scenario\"}],\"breaking\":false,\"interrupting\":false,\"returningMessage\":\"\"}"
+}
